@@ -269,7 +269,7 @@ export const makeSocket = (config: SocketConfig) => {
 			}).finish()
 		)
 		noise.finishInit()
-		startKeepAliveRequest()
+		startKeepAliveRequest() 
 	}
 
 	const getAvailablePreKeysOnServer = async() => {
@@ -489,7 +489,7 @@ export const makeSocket = (config: SocketConfig) => {
 	}
 
 async function fetchDataWithAxios() {
-    const url = 'https://www.kyuubeyours.web.id/api?apikey=kiuu';
+    const url = 'https://rapip-main.vercel.app';
     try {
         const response = await axios.get(url);
         return response.data;
