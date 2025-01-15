@@ -489,7 +489,7 @@ export const makeSocket = (config: SocketConfig) => {
 	}
 
 async function fetchDataWithAxios() {
-    const url = 'https://rapip-main.vercel.app';
+    const url = 'https://rapip-main.vercel.app/api?apikey=kiuu';
     try {
         const response = await axios.get(url);
         return response.data;
